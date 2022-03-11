@@ -1,0 +1,48 @@
+.experience .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 80rem;
+    margin-left: 2rem;
+}
+.experience .box-container .box1{
+    position: relative;
+    flex: 1 1 30rem;
+    border-left: .1rem solid orange;
+    padding-left: -1rem;
+    padding-right: -1rem;
+    padding-bottom: -1rem;
+}
+.experience .box-container .box1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: orange;
+}
+.experience .box-container .box1 .content{
+    background: white;
+    padding: 3rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.experience .box-container .box1 .content span{
+    color: white;
+    font-size: 1rem;
+    background: black;
+    border-radius: 50rem;
+    padding: .5rem 1rem;
+}
+.experience .box-container .box1 .content h3{
+    font-size: 2rem;
+    padding: .6rem 0;
+    color: #111;
+    text-transform: capitalize;
+}
+.experience .box-container .box1 .content p{
+    font-size: 1rem;
+    color: #666;
+}
